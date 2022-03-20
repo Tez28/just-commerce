@@ -12,23 +12,23 @@ ProductTag.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
-  },
-  // define product_id column
-  product_id: {
+    },
+    // define product_id column
+    product_id: {
       type: DataTypes.INTEGER,
       references: {
-          model: "product",
-          key: "id"
+        model: "product",
+        key: "id"
       }
-  },
-  // define tag_id column
-  tag_id: {
+    },
+    // define tag_id column
+    tag_id: {
       type: DataTypes.INTEGER,
       references: {
-          model: "tag",
-          key: "id"
+        model: "tag",
+        key: "id"
       }
-  }
+    }
   },
   {
     sequelize,
