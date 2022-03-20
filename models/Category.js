@@ -12,12 +12,12 @@ Category.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
-  },
-  // define category_name column
-  category_name: {
+    },
+    // define category_name column
+    category_name: {
       type: DataTypes.STRING,
       allowNull: false
-  }
+    }
   },
   {
     sequelize,

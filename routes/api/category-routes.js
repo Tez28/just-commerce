@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
       }
     ]
   })
-  .then(dbCategoryData => res.json(dbCategroyData))
+  .then(dbCategoryData => res.json(dbCategoryData))
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
       res.status(404).json({message: 'No category found matching this id!'});
       return;
     }
-    res,json(dbCategoryData);
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
@@ -72,7 +72,7 @@ router.put('/:id', (req, res) => {
       res.status(404).json({message: 'No category matching this id found'});
       return;
     }
-    res.sjon(dbCategoryData);
+    res.json(dbCategoryData);
   })
   .catch(err => {
     console.log(err);
